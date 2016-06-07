@@ -25,6 +25,7 @@ dependencies {
     compile fileTree(dir: "$coronaEnterpriseDir/Corona/android/lib/Corona/libs", include: '*.jar')
     compile fileTree(dir: 'libs', include: '*.jar')
     compile 'com.fyber:fyber-sdk:8.3.1'
+    compile 'com.google.android.gms:play-services-ads:9.0.2'
 }
 
 task exportPluginJar(type: Copy, description: 'place the plugin JAR file in the outputs directory and give it a name from the AndroidManifest.xml') {
