@@ -126,6 +126,13 @@ task certifyBuild(type: Exec, description: 'certify libcorona.so with resource.c
 
 tasks.preBuild.dependsOn('certifyBuild')
 
+repositories {
+    maven {
+        name "Fyber's maven repo"
+        url "https://fyber.bintray.com/maven"
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':plugin')

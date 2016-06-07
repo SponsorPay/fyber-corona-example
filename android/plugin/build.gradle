@@ -14,9 +14,17 @@ android {
 
 def coronaEnterpriseDir = "$rootDir/CoronaEnterprise"
 
+repositories {
+    maven {
+        name "Fyber's maven repo"
+        url "https://fyber.bintray.com/maven"
+    }
+}
+
 dependencies {
     compile fileTree(dir: "$coronaEnterpriseDir/Corona/android/lib/Corona/libs", include: '*.jar')
     compile fileTree(dir: 'libs', include: '*.jar')
+    compile 'com.fyber:fyber-sdk:8.3.1'
 }
 
 task exportPluginJar(type: Copy, description: 'place the plugin JAR file in the outputs directory and give it a name from the AndroidManifest.xml') {

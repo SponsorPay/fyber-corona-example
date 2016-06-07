@@ -93,7 +93,11 @@ public class LuaLoader implements JavaFunction, CoronaRuntimeListener {
 		// This is because this listener cannot be added to the CoronaEnvironment until after
 		// this plugin has been required-in by Lua, which occurs after the onLoaded() event.
 		// However, this method will be called when a 2nd Corona activity has been created.
+		LuaState state = runtime.getLuaState();
 
+		state.register("fyberlib", new NamedJavaFunction[]{
+				new FyberLuaFunction()
+		});
 	}
 
 	/**
@@ -229,7 +233,7 @@ public class LuaLoader implements JavaFunction, CoronaRuntimeListener {
 		public String getName() {
 			return "init";
 		}
-		
+
 		/**
 		 * This method is called when the Lua function is called.
 		 * <p>
@@ -255,7 +259,7 @@ public class LuaLoader implements JavaFunction, CoronaRuntimeListener {
 		public String getName() {
 			return "show";
 		}
-		
+
 		/**
 		 * This method is called when the Lua function is called.
 		 * <p>
