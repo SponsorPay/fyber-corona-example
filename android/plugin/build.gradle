@@ -21,10 +21,26 @@ repositories {
     }
 }
 
+configurations {
+    provided
+}
+
 dependencies {
     compile fileTree(dir: "$coronaEnterpriseDir/Corona/android/lib/Corona/libs", include: '*.jar')
     compile fileTree(dir: 'libs', include: '*.jar')
     compile 'com.fyber:fyber-sdk:8.3.1'
+    provided 'com.fyber:fyber-annotations:1.1.0'
+    provided 'com.fyber:fyber-annotations-compiler:1.2.0'
+    compile 'com.fyber.mediation:adcolony:2.3.3-r1@aar'
+    compile 'com.fyber.mediation:applovin:6.1.5-r1@aar'
+    compile 'com.fyber.mediation:unityads:1.5.6-r2@aar'
+    compile 'com.fyber.mediation:vungle:3.3.4-r1@aar'
+
+    // Vungle third-party dependencies
+    compile 'com.squareup.dagger:dagger:1.2.2'
+    compile 'javax.inject:javax.inject:1'
+    compile 'com.nineoldandroids:library:2.4.0'
+
     compile 'com.google.android.gms:play-services-ads:9.0.2'
 }
 

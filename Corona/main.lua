@@ -1,7 +1,7 @@
 local library = require "plugin.library"
 
 timer.performWithDelay( 1000, function()
-  library.loadFyberInterstitial("init", "41277", "ea74c5d4122aadd627ab856cea66fe91")
+  library.loadFyberInterstitial("init", "APP_ID", "SECURITY_TOKEN")
 end )
 
 -----------------------------------------------------------------------------------------

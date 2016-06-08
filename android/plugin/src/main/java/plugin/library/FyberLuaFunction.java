@@ -15,6 +15,8 @@ import com.fyber.ads.AdFormat;
 import com.fyber.ads.interstitials.InterstitialActivity;
 import com.fyber.ads.interstitials.InterstitialAdCloseReason;
 import com.fyber.ads.videos.RewardedVideoActivity;
+import com.fyber.annotations.FyberSDK;
+import com.fyber.mediation.configs.AppLovinConfigs;
 import com.fyber.requesters.InterstitialRequester;
 import com.fyber.requesters.RequestCallback;
 import com.fyber.requesters.RequestError;
@@ -26,32 +28,10 @@ import java.util.Map;
 
 import static plugin.library.BL_Events.sendRuntimeEvent;
 
-/*
-import com.fyber.mediation.configs.*;
-import com.fyber.annotations.MediationRuntimeConfigs;
-import com.fyber.mediation.configs.AdMobConfigs;
-import com.fyber.mediation.configs.AppLovinConfigs;
-import com.fyber.mediation.configs.ChartboostConfigs;
-import com.fyber.mediation.admob.AdMobMediationAdapter;
-import com.fyber.mediation.applovin.AppLovinMediationAdapter;
-import com.fyber.mediation.chartboost.ChartboostMediationAdapter;
-*/
-
-/*@ChartboostConfigs(
-    logLevel = "ALL",
-    cacheInterstitials = true,
-    cacheRewardedVideo = true
-)*/
-/*@AdMobConfigs(
-	addTestDevice  = {
-	    "45A13240018909CDC2834C8FCAC8FC67",
-	},
-	isCOPPAcompliant = true,
-	adUnitId = ""
-)*/
-/*@AppLovinConfigs(
+@FyberSDK
+@AppLovinConfigs(
     setVerboseLogging = true
-)*/
+)
 public class FyberLuaFunction implements com.naef.jnlua.NamedJavaFunction {
 
 	private static final String TAG = "FYBER SDK LOG";

@@ -19,9 +19,9 @@ android {
     signingConfigs {
         release {
             storeFile file("$rootDir/apptemplate.keystore")
-            storePassword 'beaver'
+            storePassword 'password'
             keyAlias 'alias_name'
-            keyPassword 'beaver'
+            keyPassword 'password'
         }
     }
 
