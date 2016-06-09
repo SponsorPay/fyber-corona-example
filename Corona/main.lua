@@ -1,8 +1,17 @@
 local library = require "plugin.library"
 
-timer.performWithDelay( 1000, function()
-  library.loadFyberInterstitial("init", "APP_ID", "SECURITY_TOKEN")
-end )
+
+local center_x              = display.contentWidth * 0.5
+local center_y              = display.contentHeight * 0.5
+local rect_show_video = display.newRect( center_x + 70, center_y + 80, 125, 100 )
+
+local function enable_show_video_button()
+  rect_show_video:setFillColor( 1,0,1,1 )
+end
+
+local function disable_show_video_button()
+  rect_show_video:setFillColor( 1,0,1,0.5 )
+end
 
 -----------------------------------------------------------------------------------------
 local function on_InterstitialEvent(event)
@@ -15,6 +24,11 @@ end
 local function on_VideoEvent(event)
   -- load status : load_video_available , load_video_not_available , load_video_request_error
   -- show status : show_video_finished , show_video_aborted , show_video_error
+  if event.status == "load_video_available" then
+    enable_show_video_button()
+  else
+    disable_show_video_button()
+  end
 end
 
 --listeners---------------------------------------------------------------------------------------
@@ -66,9 +80,6 @@ end
 Runtime:addEventListener("InterstitialEvent",   on_InterstitialEvent)
 Runtime:addEventListener("VideoEvent",  on_VideoEvent)
 
-local center_x              = display.contentWidth * 0.5
-local center_y              = display.contentHeight * 0.5
-
 --UI---------------------------------------------------------------------------------------
 local rect_load_interstitial = display.newRect( center_x - 70, center_y - 80, 125, 100 )
 rect_load_interstitial:setFillColor( 1,0,1 )
@@ -86,7 +97,11 @@ rect_show_interstitial:setFillColor( 1,0,1 )
 local text_interstitial = display.newText( "Show interstitial", rect_show_interstitial.x, rect_show_interstitial.y, native.systemFont, 16 )
 rect_show_interstitial:addEventListener( "touch", show_interstitial_listener )
 
-local rect_show_video = display.newRect( center_x + 70, center_y + 80, 125, 100 )
-rect_show_video:setFillColor( 1,0,1 )
+rect_show_video:setFillColor( 1,0,1,0.5 )
 local text_interstitial = display.newText( "Show video", rect_show_video.x, rect_show_video.y, native.systemFont, 16 )
 rect_show_video:addEventListener( "touch", show_video_listener )
+
+timer.performWithDelay( 1000, function()
+  library.loadFyberInterstitial("init", "APP_ID", "SECURITY_TOKEN")
+end )
+
