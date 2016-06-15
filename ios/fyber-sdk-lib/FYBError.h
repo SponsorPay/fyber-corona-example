@@ -33,13 +33,19 @@ typedef NS_ENUM(NSInteger, FYBErrorCode) {
     FYBErrorCodeOfferWallNoAppId               = 4002,
     FYBErrorCodeOfferWallLoading               = 4010,
 
-    FYBErrorCodeMediationOther                = 5000,
-    FYBErrorCodeMediationSDK                  = 5001,
-    FYBErrorCodeMediationInvalidConfiguration = 5002,
-    FYBErrorCodeMediationNoFill               = 5003,
-    FYBErrorCodeMediationServer               = 5004,
-    FYBErrorCodeMediationNetwork              = 5005,
-    FYBErrorCodeMediationAdTimeOut            = 5006,
+    FYBErrorCodeMediationOther                 = 5000,
+    FYBErrorCodeMediationSDK                   = 5001,
+    FYBErrorCodeMediationInvalidConfiguration  = 5002,
+    FYBErrorCodeMediationNoFill                = 5003,
+    FYBErrorCodeMediationServer                = 5004,
+    FYBErrorCodeMediationNetwork               = 5005,
+    FYBErrorCodeMediationAdTimeOut             = 5006,
+
+    FYBErrorCodeBannerNotReady                 = 6001,
+    FYBErrorCodeBannerNoOffers                 = 6002,
+    FYBErrorCodeBannerInvalidSize              = 6003,
+    FYBErrorCodeBannerRequesting               = 6010,
+    FYBErrorCodeBannerRequestingTimeout        = 6011,
 
     FYBErrorCodeExternalStoreKit               = 9000
 };

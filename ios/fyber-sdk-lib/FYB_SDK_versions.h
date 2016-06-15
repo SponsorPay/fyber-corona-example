@@ -5,5 +5,5 @@
 //
 
 static const NSInteger FYBSDKReleaseVersionNumberMajor = 8;
-static const NSInteger FYBSDKReleaseVersionNumberMinor = 1;
-static const NSInteger FYBSDKReleaseVersionNumberPatch = 0;
+static const NSInteger FYBSDKReleaseVersionNumberMinor = 3;
+static const NSInteger FYBSDKReleaseVersionNumberPatch = 1;

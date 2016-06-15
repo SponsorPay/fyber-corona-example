@@ -25,8 +25,7 @@
  *
  *  @warning This property is not evaluated if the key FYBOFWShowCloseOnLoad is set in the Info file
  */
-@property (nonatomic, assign) BOOL showCloseButtonOnLoad;
-
+@property (nonatomic, assign) BOOL showCloseButtonOnLoad __attribute__((deprecated("This property is deprecated in SDK 8.3.1")));
 
 /**
  *  Presents the Offer Wall view controller on top of the passed view controller

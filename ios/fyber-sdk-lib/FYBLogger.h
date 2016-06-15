@@ -10,7 +10,7 @@
 
 @protocol FYBLogAppender;
 
-#define LogInvocation NSLog(@"%s", __PRETTY_FUNCTION__)
+static inline void LogInvocation() { NSLog(@"%s", __PRETTY_FUNCTION__); }
 
 #define FYBLogDebug(...) _FYBLogDebug(__VA_ARGS__)
 #define FYBLogInfo(...) _FYBLogInfo(__VA_ARGS__)

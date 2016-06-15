@@ -10,6 +10,7 @@
 #import "FYBVirtualCurrencyClient.h"
 #import "FYBRewardedVideoController.h"
 #import "FYBInterstitialController.h"
+#import "FYBBannerController.h"
 #import "FYBLogLevel.h"
 #import "FYBUser.h"
 #import "FYBSDKOptions.h"
@@ -33,6 +34,12 @@
  */
 @property (nonatomic, strong, readonly) FYBUser *user;
 
+/**
+ * The userId that was passed to -[FyberSDK startWithOptions:] within the FYBSDKOptions object
+ *
+ *  @see FYBSDKOptions
+ */
+@property (nonatomic, strong, readonly) NSString *userId;
 
 /**
  *  Determines if a notification should be shown to the user when rewarded
@@ -90,6 +97,18 @@
  *  @return The FYBInterstitialController singleton
  */
 + (FYBInterstitialController *)interstitialController;
+
+
+/** ------------- */
+/** @name Banners */
+/** ------------- */
+
+/**
+ *  Accessor to retrieve the controller for Banners
+ *
+ *  @return The FYBBannerController singleton
+ */
++ (FYBBannerController *)bannerController;
 
 
 /** ---------------------- */

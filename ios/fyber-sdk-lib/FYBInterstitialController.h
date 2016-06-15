@@ -42,7 +42,7 @@
 - (void)requestInterstitial;
 
 /**
- *  Same as -requestVideo but accepts a FYBRequestParameters object as parameter. Through this object you can add custom parameters to the request
+ *  Same as -requestInterstitial but accepts a FYBRequestParameters object as parameter. Through this object you can add custom parameters to the request
  *  and also specify a placementId
  *
  *  @param parameters A configured instance of FYBRequestParameters
