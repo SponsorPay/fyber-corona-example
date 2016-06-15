@@ -13,6 +13,8 @@
 #import <UIKit/UIKit.h>
 
 #import "FyberSDK.h"
+#import "Fyber_FacebookAudienceNetwork_4.10.1-r2.embeddedframework/FYBFacebookAudienceNetwork.h"
+#import "Fyber_AdMob_7.6.0-r2.embeddedframework/FYBAdMob.h"
 
 //variables
 static lua_State* state;
@@ -236,6 +238,27 @@ static bool fyber_initialized = NO;
 
 @end
 
+////////////////////////////////////////////////////////////////////////////
+// fyber banner delegate
+////////////////////////////////////////////////////////////////////////////
+@interface MyFyberBannerDelegate : UIViewController <FYBBannerControllerDelegate>
+
+@end
+
+@implementation MyFyberBannerDelegate
+
+- (void)bannerControllerDidReceiveBanner:(FYBBannerController *)bannerController {
+    NSLog(@"FYBER banner received - showing");
+    [[FyberSDK bannerController] presentBannerAtPosition:FYBBannerPositionBottom];
+}
+
+- (void)bannerController:(FYBBannerController *)bannerController didFailToReceiveBannerWithError:(NSError *)error {
+    NSLog(@"FYBER banner failure: %@", error);
+}
+
+@end
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 static int FyberFunction(lua_State *L ) {
     //1. fyber_action : init, load_interstitial, load_video, show_interstitial, show_video
@@ -316,18 +339,29 @@ static int FyberFunction(lua_State *L ) {
             // NSLog(@"FYBER show_interstitial");
             
             // Play the received interstitial
-            UIViewController *rootViewController = (UIViewController*)[[[UIApplication sharedApplication] keyWindow] rootViewController];
+            UIViewController *rootViewController = (UIViewController*)[[[[UIApplication sharedApplication] delegate] window] rootViewController];
             
             [[FyberSDK interstitialController] presentInterstitialFromViewController:rootViewController];
             
         } else if ([fyber_action isEqualToString:@"show_video"]) {
             // NSLog(@"FYBER show_video");
             
-            UIViewController *rootViewController = (UIViewController*)[[[UIApplication sharedApplication] keyWindow] rootViewController];
-            // [interstitial_ presentFromRootViewController:rootViewController];
+            UIViewController *rootViewController = (UIViewController*)[[[[UIApplication sharedApplication] delegate] window] rootViewController];
 
             [[FyberSDK rewardedVideoController] presentRewardedVideoFromViewController:rootViewController];
             
+        } else if ([fyber_action isEqualToString:@"load_banner"]) {
+            FYBBannerController *bannerController = [FyberSDK bannerController];
+            bannerController.delegate = [MyFyberBannerDelegate new];
+            bannerController.modalViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+            NSDictionary *bannerSizes = @{
+                                          FYBAdMobNetworkName    : [FYBBannerSize adMobDefault],
+                                          FYBFacebookNetworkName : [FYBBannerSize facebookDefault]
+                                          };
+            
+            [bannerController requestBannerWithSizes:bannerSizes];
+        } else if ([fyber_action isEqualToString:@"destroy_banner"]) {
+            [[FyberSDK bannerController] destroyBanner];
         }
     
     }
