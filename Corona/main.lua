@@ -75,6 +75,25 @@ local function show_video_listener(event)
   return true
 end
 
+---
+local function load_banner(event)
+  if event.phase == "began" then
+    print("load_banner")
+    library.loadFyberInterstitial("load_banner")
+  end
+
+  return true
+end
+
+local function destroy_banner(event)
+  if event.phase == "began" then
+    print("destroy_banner")
+    library.loadFyberInterstitial("destroy_banner")
+  end
+
+  return true
+end
+
 -----------------------------------------------------------------------------------------
 --register bridge listener
 Runtime:addEventListener("InterstitialEvent",   on_InterstitialEvent)
@@ -101,7 +120,14 @@ rect_show_video:setFillColor( 1,0,1,0.5 )
 local text_interstitial = display.newText( "Show video", rect_show_video.x, rect_show_video.y, native.systemFont, 16 )
 rect_show_video:addEventListener( "touch", show_video_listener )
 
-timer.performWithDelay( 1000, function()
-  library.loadFyberInterstitial("init", "APP_ID", "SECURITY_TOKEN")
-end )
+local rect_load_banner = display.newRect( center_x - 70, center_y + 185, 125, 40 )
+rect_load_banner:setFillColor( 1,0,1 )
+display.newText("Load Banner", rect_load_banner.x, rect_load_banner.y, native.systemFont, 16)
+rect_load_banner:addEventListener("touch", load_banner)
 
+local rect_destroy_banner = display.newRect( center_x + 70, center_y + 185, 125, 40 )
+rect_destroy_banner:setFillColor( 1,0,1 )
+display.newText("Destroy Banner", rect_destroy_banner.x, rect_destroy_banner.y, native.systemFont, 16)
+rect_destroy_banner:addEventListener("touch", destroy_banner)
+
+library.loadFyberInterstitial("init", "35189", "3c2639d04753b318538b8aadbaae9837")
