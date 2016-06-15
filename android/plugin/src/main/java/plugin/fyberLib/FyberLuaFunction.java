@@ -3,7 +3,7 @@
  * v: 1.00
  ******************************************************************************/
 
-package plugin.library;
+package plugin.fyberLib;
 
 import android.content.Intent;
 import android.view.Gravity;
@@ -67,7 +67,7 @@ public class FyberLuaFunction implements com.naef.jnlua.NamedJavaFunction {
      */
     @Override
     public String getName() {
-        return "loadFyberInterstitial";
+        return "CallMethod";
     }
 
     private static void sendToCorona(String event, String status, String extras) {

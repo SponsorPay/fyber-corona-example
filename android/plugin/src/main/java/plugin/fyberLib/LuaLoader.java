@@ -7,7 +7,7 @@
 
 // This corresponds to the name of the Lua library,
 // e.g. [Lua] require "plugin.library"
-package plugin.library;
+package plugin.fyberLib;
 
 import com.ansca.corona.CoronaEnvironment;
 import com.ansca.corona.CoronaLua;
@@ -90,9 +90,9 @@ public class LuaLoader implements JavaFunction, CoronaRuntimeListener {
 		// However, this method will be called when a 2nd Corona activity has been created.
 		LuaState state = runtime.getLuaState();
 
-		state.register("fyberlib", new NamedJavaFunction[]{
-				new FyberLuaFunction()
-		});
+//		state.register("fyberlib", new NamedJavaFunction[]{
+//				new FyberLuaFunction()
+//		});
 	}
 
 	/**

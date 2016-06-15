@@ -1,4 +1,4 @@
-package plugin.library;
+package plugin.fyberLib;
 
 import java.util.Map;
 

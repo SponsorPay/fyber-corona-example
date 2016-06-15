@@ -362,7 +362,7 @@ static int locale_to_currency( lua_State *L )
 const char *
 fyberLib::Name()
 {
-	static const char sName[] = "fyberLib";
+	static const char sName[] = "plugin.fyberLib";
 	return sName;
 }
 
@@ -374,7 +374,7 @@ fyberLib::Open( lua_State *L )
     
     const luaL_Reg kVTable[] =
 	{
-        { "Fyber",              FyberFunction },
+        { "CallMethod", FyberFunction },
         { "locale_to_currency", locale_to_currency },
 		{ NULL, NULL }
 	};

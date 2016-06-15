@@ -1,4 +1,4 @@
-local library = require "plugin.library"
+local fyberLib = require "plugin.fyberLib"
 
 
 local center_x              = display.contentWidth * 0.5
@@ -36,7 +36,7 @@ local function load_interstitial_listener(event)
   if event.phase == "began" then
     print("load_interstitial")
 
-    library.loadFyberInterstitial("load_interstitial")
+    fyberLib.CallMethod("load_interstitial")
   end
 
   return true
@@ -47,7 +47,7 @@ local function load_video_listener(event)
   if event.phase == "began" then
     print("load_video")
 
-    library.loadFyberInterstitial("load_video")
+    fyberLib.CallMethod("load_video")
   end
 
   return true
@@ -58,7 +58,7 @@ local function show_interstitial_listener(event)
   if event.phase == "began" then
     print("show_interstitial")
 
-    library.loadFyberInterstitial("show_interstitial")
+    fyberLib.CallMethod("show_interstitial")
   end
 
   return true
@@ -69,7 +69,7 @@ local function show_video_listener(event)
   if event.phase == "began" then
     print("show_video")
 
-    library.loadFyberInterstitial("show_video")
+    fyberLib.CallMethod("show_video")
   end
 
   return true
@@ -79,7 +79,7 @@ end
 local function load_banner(event)
   if event.phase == "began" then
     print("load_banner")
-    library.loadFyberInterstitial("load_banner")
+    fyberLib.CallMethod("load_banner")
   end
 
   return true
@@ -88,7 +88,7 @@ end
 local function destroy_banner(event)
   if event.phase == "began" then
     print("destroy_banner")
-    library.loadFyberInterstitial("destroy_banner")
+    fyberLib.CallMethod("destroy_banner")
   end
 
   return true
@@ -130,4 +130,4 @@ rect_destroy_banner:setFillColor( 1,0,1 )
 display.newText("Destroy Banner", rect_destroy_banner.x, rect_destroy_banner.y, native.systemFont, 16)
 rect_destroy_banner:addEventListener("touch", destroy_banner)
 
-library.loadFyberInterstitial("init", "35189", "3c2639d04753b318538b8aadbaae9837")
+fyberLib.CallMethod("init", "35189", "3c2639d04753b318538b8aadbaae9837")
