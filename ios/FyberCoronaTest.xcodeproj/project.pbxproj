@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0465B6AD1721730A00039049 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0465B6A81721730A00039049 /* Default-568h@2x.png */; };
+		0465B6B61721748800039049 /* MyCoronaDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0465B6B51721748800039049 /* MyCoronaDelegate.mm */; };
+		0465B6B9172174A700039049 /* fyberLib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0465B6B8172174A700039049 /* fyberLib.mm */; };
+		732680EF1907B28400B442CD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732680EE1907B28400B442CD /* CoreTelephony.framework */; };
+		732680F11907B28F00B442CD /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732680F01907B28F00B442CD /* EventKit.framework */; };
+		732680F31907B29400B442CD /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732680F21907B29400B442CD /* EventKitUI.framework */; };
+		732680F51907B2A400B442CD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732680F41907B2A400B442CD /* iAd.framework */; };
+		732680F71907B2AB00B442CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 732680F61907B2AB00B442CD /* libz.dylib */; };
+		732680FB1907B2E900B442CD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732680FA1907B2E900B442CD /* CoreVideo.framework */; };
+		732680FC1907B2F600B442CD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484112315114F700074BD57 /* GLKit.framework */; };
+		7337D32819B87A9C00BD4952 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7337D32719B87A9C00BD4952 /* libsqlite3.0.dylib */; };
+		993B9EB91D11E36700B706CF /* libFyberSDK-8.3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 993B9EB81D11E36700B706CF /* libFyberSDK-8.3.1.a */; };
+		993B9EBE1D11EEB000B706CF /* Fyber_AdMob_7.6.0-r2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993B9EBC1D11EEB000B706CF /* Fyber_AdMob_7.6.0-r2.framework */; };
+		993B9EC81D1212B900B706CF /* Fyber_FacebookAudienceNetwork_4.10.1-r2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993B9EC51D1212B900B706CF /* Fyber_FacebookAudienceNetwork_4.10.1-r2.framework */; };
+		A447B6671666FD02009EA762 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A447B6641666FD02009EA762 /* MainWindow-iPad.xib */; };
+		A447B6681666FD02009EA762 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A447B6651666FD02009EA762 /* MainWindow.xib */; };
+		A447B66A1666FD43009EA762 /* CoronaSDK3rdPartyLicenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = A447B6691666FD43009EA762 /* CoronaSDK3rdPartyLicenses.txt */; };
+		A447B67C16675195009EA762 /* libplayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A447B67116670028009EA762 /* libplayer.a */; };
+		A484111E15114F700074BD57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484111D15114F700074BD57 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A484112015114F700074BD57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484111F15114F700074BD57 /* Foundation.framework */; };
+		A484112215114F700074BD57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484112115114F700074BD57 /* CoreGraphics.framework */; };
+		A484112615114F700074BD57 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484112515114F700074BD57 /* OpenGLES.framework */; };
+		A484112C15114F700074BD57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A484112A15114F700074BD57 /* InfoPlist.strings */; };
+		A484112E15114F700074BD57 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A484112D15114F700074BD57 /* main.mm */; };
+		A484117715128D5D0074BD57 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116315128D5C0074BD57 /* AddressBook.framework */; };
+		A484117815128D5D0074BD57 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116415128D5C0074BD57 /* AddressBookUI.framework */; };
+		A484117915128D5D0074BD57 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116515128D5C0074BD57 /* AudioToolbox.framework */; };
+		A484117A15128D5D0074BD57 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116615128D5C0074BD57 /* AVFoundation.framework */; };
+		A484117B15128D5D0074BD57 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116715128D5C0074BD57 /* CFNetwork.framework */; };
+		A484117C15128D5D0074BD57 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116815128D5C0074BD57 /* CoreLocation.framework */; };
+		A484117D15128D5D0074BD57 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116915128D5C0074BD57 /* CoreMedia.framework */; };
+		A484117E15128D5D0074BD57 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116A15128D5C0074BD57 /* CoreMotion.framework */; };
+		A484118015128D5D0074BD57 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116C15128D5D0074BD57 /* ImageIO.framework */; };
+		A484118115128D5D0074BD57 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116D15128D5D0074BD57 /* libobjc.dylib */; };
+		A484118315128D5D0074BD57 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484116F15128D5D0074BD57 /* MediaPlayer.framework */; };
+		A484118415128D5D0074BD57 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484117015128D5D0074BD57 /* MessageUI.framework */; };
+		A484118515128D5D0074BD57 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484117115128D5D0074BD57 /* MobileCoreServices.framework */; };
+		A484118615128D5D0074BD57 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484117215128D5D0074BD57 /* OpenAL.framework */; };
+		A484118715128D5D0074BD57 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484117315128D5D0074BD57 /* QuartzCore.framework */; };
+		A484118815128D5D0074BD57 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484117415128D5D0074BD57 /* Security.framework */; };
+		A484118915128D5D0074BD57 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484117515128D5D0074BD57 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A484118A15128D5D0074BD57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484117615128D5D0074BD57 /* SystemConfiguration.framework */; };
+		A48411CA15129F610074BD57 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A48411C915129F610074BD57 /* libsqlite3.dylib */; };
+		A498B81A16D70EFC0091A148 /* CoronaResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A498B81916D70EFC0091A148 /* CoronaResources.bundle */; };
+		A4C2449A1683FA5300C395D1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C244971683FA5300C395D1 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A4C2449B1683FA5300C395D1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C244981683FA5300C395D1 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A4C2449C1683FA5300C395D1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C244991683FA5300C395D1 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A4E2537F166AE3DC00DCDC2C /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E2537E166AE3DC00DCDC2C /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D968F6751BEA0842005A5A6F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D968F6741BEA0842005A5A6F /* CoreText.framework */; };
+		D968F6771BEA0981005A5A6F /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D968F6761BEA0981005A5A6F /* GameController.framework */; };
+		D968F6791BEA09F7005A5A6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D968F6781BEA09F7005A5A6F /* MapKit.framework */; };
+		D968F6AD1BEA0C98005A5A6F /* FYBBackIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D968F6A91BEA0C98005A5A6F /* FYBBackIcon@2x.png */; };
+		D968F6AE1BEA0C98005A5A6F /* FYBBackIconiPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D968F6AA1BEA0C98005A5A6F /* FYBBackIconiPad@2x.png */; };
+		D968F6AF1BEA0C98005A5A6F /* FYBBackIconiPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D968F6AB1BEA0C98005A5A6F /* FYBBackIconiPhone@2x.png */; };
+		D97C90551BF0AF2500AE8FB1 /* libnotifications.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D97C90541BF0AF2500AE8FB1 /* libnotifications.a */; };
+		D9C4087E1BEB52650036B9FE /* Fyber_AdColony_2.6.0-r2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C4087C1BEB52650036B9FE /* Fyber_AdColony_2.6.0-r2.framework */; };
+		D9C408801BEB53E50036B9FE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C4087F1BEB53E50036B9FE /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D9C408841BEB54B80036B9FE /* Fyber_AppLovin_3.1.3-r1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C408821BEB54B80036B9FE /* Fyber_AppLovin_3.1.3-r1.framework */; };
+		D9C4088C1BEB60920036B9FE /* Fyber_Chartboost_5.5.0-r2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C4088A1BEB60920036B9FE /* Fyber_Chartboost_5.5.0-r2.framework */; };
+		D9C408901BEB6B990036B9FE /* Fyber_InMobi_4.5.3-r2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C4088E1BEB6B990036B9FE /* Fyber_InMobi_4.5.3-r2.framework */; };
+		D9C408981BEB6E810036B9FE /* Fyber_UnityAds_1.5.2-r1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C408941BEB6E810036B9FE /* Fyber_UnityAds_1.5.2-r1.framework */; };
+		D9C408991BEB6E810036B9FE /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9C408961BEB6E810036B9FE /* UnityAds.bundle */; };
+		D9C4089A1BEB6E810036B9FE /* UnityAdsCompiler-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9C408971BEB6E810036B9FE /* UnityAdsCompiler-Info.plist */; };
+		D9C408A41BEB79DA0036B9FE /* Fyber_Vungle_3.2.0-r1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C4089C1BEB79DA0036B9FE /* Fyber_Vungle_3.2.0-r1.framework */; };
+		D9C408A51BEB79DA0036B9FE /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = D9C4089E1BEB79DA0036B9FE /* __vungle.db */; };
+		D9C408A61BEB79DA0036B9FE /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C4089F1BEB79DA0036B9FE /* vg_close.png */; };
+		D9C408A71BEB79DA0036B9FE /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C408A01BEB79DA0036B9FE /* vg_cta.png */; };
+		D9C408A81BEB79DA0036B9FE /* vg_mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C408A11BEB79DA0036B9FE /* vg_mute_off.png */; };
+		D9C408A91BEB79DA0036B9FE /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C408A21BEB79DA0036B9FE /* vg_mute_on.png */; };
+		D9C408AA1BEB79DA0036B9FE /* VungleCompiler-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9C408A31BEB79DA0036B9FE /* VungleCompiler-Info.plist */; };
+		D9C4DA051C50C98B00D24F86 /* libplugin_library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C4DA041C50C98B00D24F86 /* libplugin_library.a */; };
+		D9ECE56B1C51131500C3F162 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ECE56A1C51131500C3F162 /* AssetsLibrary.framework */; };
+		D9ECE56D1C51134500C3F162 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ECE56C1C51134500C3F162 /* Photos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0465B6A81721730A00039049 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0465B6B41721748800039049 /* MyCoronaDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCoronaDelegate.h; sourceTree = SOURCE_ROOT; };
+		0465B6B51721748800039049 /* MyCoronaDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCoronaDelegate.mm; sourceTree = SOURCE_ROOT; };
+		0465B6B7172174A700039049 /* fyberLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fyberLib.h; sourceTree = SOURCE_ROOT; };
+		0465B6B8172174A700039049 /* fyberLib.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = fyberLib.mm; sourceTree = SOURCE_ROOT; };
+		732680EE1907B28400B442CD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		732680F01907B28F00B442CD /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		732680F21907B29400B442CD /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		732680F41907B2A400B442CD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		732680F61907B2AB00B442CD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		732680FA1907B2E900B442CD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7337D32719B87A9C00BD4952 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		993B9EB81D11E36700B706CF /* libFyberSDK-8.3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libFyberSDK-8.3.1.a"; sourceTree = "<group>"; };
+		993B9EBB1D11EEB000B706CF /* FYBAdMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYBAdMob.h; sourceTree = "<group>"; };
+		993B9EBC1D11EEB000B706CF /* Fyber_AdMob_7.6.0-r2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_AdMob_7.6.0-r2.framework"; sourceTree = "<group>"; };
+		993B9EC51D1212B900B706CF /* Fyber_FacebookAudienceNetwork_4.10.1-r2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_FacebookAudienceNetwork_4.10.1-r2.framework"; sourceTree = "<group>"; };
+		993B9EC61D1212B900B706CF /* FYBFacebookAudienceNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYBFacebookAudienceNetwork.h; sourceTree = "<group>"; };
+		993B9EC91D12139C00B706CF /* FYB_SDK_versions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYB_SDK_versions.h; sourceTree = "<group>"; };
+		993B9ECA1D12139C00B706CF /* FYBAdapterOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBAdapterOptions.h; sourceTree = "<group>"; };
+		993B9ECB1D12139C00B706CF /* FYBBannerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBannerController.h; sourceTree = "<group>"; };
+		993B9ECC1D12139C00B706CF /* FYBBannerControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBannerControllerDelegate.h; sourceTree = "<group>"; };
+		993B9ECD1D12139C00B706CF /* FYBBannerControllerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBannerControllerState.h; sourceTree = "<group>"; };
+		993B9ECE1D12139C00B706CF /* FYBBannerNetworkAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBannerNetworkAdapter.h; sourceTree = "<group>"; };
+		993B9ECF1D12139C00B706CF /* FYBBannerNetworkAdapterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBannerNetworkAdapterDelegate.h; sourceTree = "<group>"; };
+		993B9ED01D12139C00B706CF /* FYBBannerPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBannerPosition.h; sourceTree = "<group>"; };
+		993B9ED11D12139C00B706CF /* FYBBannerSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBannerSize.h; sourceTree = "<group>"; };
+		993B9ED21D12139C00B706CF /* FYBBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBannerView.h; sourceTree = "<group>"; };
+		993B9ED31D12139C00B706CF /* FYBBaseNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBBaseNetwork.h; sourceTree = "<group>"; };
+		993B9ED41D12139C00B706CF /* FYBCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBCacheManager.h; sourceTree = "<group>"; };
+		993B9ED51D12139C00B706CF /* FYBError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBError.h; sourceTree = "<group>"; };
+		993B9ED61D12139C00B706CF /* FyberSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FyberSDK.h; sourceTree = "<group>"; };
+		993B9ED71D12139C00B706CF /* FYBInterstitialController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBInterstitialController.h; sourceTree = "<group>"; };
+		993B9ED81D12139C00B706CF /* FYBInterstitialControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBInterstitialControllerDelegate.h; sourceTree = "<group>"; };
+		993B9ED91D12139D00B706CF /* FYBInterstitialControllerDismissReason.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBInterstitialControllerDismissReason.h; sourceTree = "<group>"; };
+		993B9EDA1D12139D00B706CF /* FYBInterstitialControllerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBInterstitialControllerState.h; sourceTree = "<group>"; };
+		993B9EDB1D12139D00B706CF /* FYBInterstitialNetworkAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBInterstitialNetworkAdapter.h; sourceTree = "<group>"; };
+		993B9EDC1D12139D00B706CF /* FYBInterstitialNetworkAdapterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBInterstitialNetworkAdapterDelegate.h; sourceTree = "<group>"; };
+		993B9EDD1D12139D00B706CF /* FYBLogAppender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBLogAppender.h; sourceTree = "<group>"; };
+		993B9EDE1D12139D00B706CF /* FYBLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBLogger.h; sourceTree = "<group>"; };
+		993B9EDF1D12139D00B706CF /* FYBLogLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBLogLevel.h; sourceTree = "<group>"; };
+		993B9EE01D12139D00B706CF /* FYBOfferWallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBOfferWallViewController.h; sourceTree = "<group>"; };
+		993B9EE11D12139D00B706CF /* FYBPrecachingNetworkAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBPrecachingNetworkAdapter.h; sourceTree = "<group>"; };
+		993B9EE21D12139D00B706CF /* FYBRandomID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRandomID.h; sourceTree = "<group>"; };
+		993B9EE31D12139D00B706CF /* FYBReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBReachability.h; sourceTree = "<group>"; };
+		993B9EE41D12139D00B706CF /* FYBRequestParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRequestParameters.h; sourceTree = "<group>"; };
+		993B9EE51D12139D00B706CF /* FYBRewardedVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRewardedVideoController.h; sourceTree = "<group>"; };
+		993B9EE61D12139D00B706CF /* FYBRewardedVideoControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRewardedVideoControllerDelegate.h; sourceTree = "<group>"; };
+		993B9EE71D12139D00B706CF /* FYBRewardedVideoControllerDismissReason.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRewardedVideoControllerDismissReason.h; sourceTree = "<group>"; };
+		993B9EE81D12139D00B706CF /* FYBRewardedVideoControllerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRewardedVideoControllerState.h; sourceTree = "<group>"; };
+		993B9EE91D12139D00B706CF /* FYBRewardedVideoNetworkAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRewardedVideoNetworkAdapter.h; sourceTree = "<group>"; };
+		993B9EEA1D12139D00B706CF /* FYBRewardedVideoNetworkAdapterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRewardedVideoNetworkAdapterDelegate.h; sourceTree = "<group>"; };
+		993B9EEB1D12139D00B706CF /* FYBRewardedVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBRewardedVideoViewController.h; sourceTree = "<group>"; };
+		993B9EEC1D12139D00B706CF /* FYBSDKOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBSDKOptions.h; sourceTree = "<group>"; };
+		993B9EED1D12139D00B706CF /* FYBSystemLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBSystemLogger.h; sourceTree = "<group>"; };
+		993B9EEE1D12139D00B706CF /* FYBTPNGenericAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBTPNGenericAdapter.h; sourceTree = "<group>"; };
+		993B9EEF1D12139D00B706CF /* FYBTPNMediationTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBTPNMediationTypes.h; sourceTree = "<group>"; };
+		993B9EF01D12139D00B706CF /* FYBTPNVideoAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBTPNVideoAdapter.h; sourceTree = "<group>"; };
+		993B9EF11D12139D00B706CF /* FYBUrlParametersProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBUrlParametersProvider.h; sourceTree = "<group>"; };
+		993B9EF21D12139D00B706CF /* FYBUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBUser.h; sourceTree = "<group>"; };
+		993B9EF31D12139D00B706CF /* FYBUserConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBUserConstants.h; sourceTree = "<group>"; };
+		993B9EF41D12139D00B706CF /* FYBVirtualCurrencyClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBVirtualCurrencyClient.h; sourceTree = "<group>"; };
+		993B9EF51D12139D00B706CF /* FYBVirtualCurrencyClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBVirtualCurrencyClientDelegate.h; sourceTree = "<group>"; };
+		993B9EF61D12139D00B706CF /* FYBVirtualCurrencyErrorType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBVirtualCurrencyErrorType.h; sourceTree = "<group>"; };
+		993B9EF71D12139D00B706CF /* FYBVirtualCurrencyResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYBVirtualCurrencyResponse.h; sourceTree = "<group>"; };
+		A447B6641666FD02009EA762 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "CoronaEnterprise/Corona/ios/resource/MainWindow-iPad.xib"; sourceTree = SOURCE_ROOT; };
+		A447B6651666FD02009EA762 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = CoronaEnterprise/Corona/ios/resource/MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		A447B6691666FD43009EA762 /* CoronaSDK3rdPartyLicenses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CoronaSDK3rdPartyLicenses.txt; path = CoronaEnterprise/Corona/shared/resource/CoronaSDK3rdPartyLicenses.txt; sourceTree = SOURCE_ROOT; };
+		A447B67116670028009EA762 /* libplayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libplayer.a; path = CoronaEnterprise/Corona/ios/lib/libplayer.a; sourceTree = SOURCE_ROOT; };
+		A447B824166856F3009EA762 /* main.lua */ = {isa = PBXFileReference; lastKnownFileType = text; name = main.lua; path = ../Corona/main.lua; sourceTree = SOURCE_ROOT; };
+		A484111915114F700074BD57 /* FyberCoronaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyberCoronaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A484111D15114F700074BD57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A484111F15114F700074BD57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A484112115114F700074BD57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A484112315114F700074BD57 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A484112515114F700074BD57 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A484112B15114F700074BD57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A484112D15114F700074BD57 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = SOURCE_ROOT; };
+		A484112F15114F700074BD57 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
+		A484116315128D5C0074BD57 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A484116415128D5C0074BD57 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		A484116515128D5C0074BD57 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A484116615128D5C0074BD57 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A484116715128D5C0074BD57 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A484116815128D5C0074BD57 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A484116915128D5C0074BD57 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A484116A15128D5C0074BD57 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A484116C15128D5D0074BD57 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A484116D15128D5D0074BD57 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+		A484116F15128D5D0074BD57 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A484117015128D5D0074BD57 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A484117115128D5D0074BD57 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A484117215128D5D0074BD57 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		A484117315128D5D0074BD57 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A484117415128D5D0074BD57 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A484117515128D5D0074BD57 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A484117615128D5D0074BD57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A48411C915129F610074BD57 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A498B81916D70EFC0091A148 /* CoronaResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CoronaResources.bundle; path = CoronaEnterprise/Corona/ios/resource/CoronaResources.bundle; sourceTree = SOURCE_ROOT; };
+		A4C244971683FA5300C395D1 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A4C244981683FA5300C395D1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A4C244991683FA5300C395D1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A4E2537E166AE3DC00DCDC2C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		D968F6741BEA0842005A5A6F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D968F6761BEA0981005A5A6F /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		D968F6781BEA09F7005A5A6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D968F6A91BEA0C98005A5A6F /* FYBBackIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYBBackIcon@2x.png"; sourceTree = "<group>"; };
+		D968F6AA1BEA0C98005A5A6F /* FYBBackIconiPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYBBackIconiPad@2x.png"; sourceTree = "<group>"; };
+		D968F6AB1BEA0C98005A5A6F /* FYBBackIconiPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYBBackIconiPhone@2x.png"; sourceTree = "<group>"; };
+		D97C90541BF0AF2500AE8FB1 /* libnotifications.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnotifications.a; sourceTree = "<group>"; };
+		D9C4087C1BEB52650036B9FE /* Fyber_AdColony_2.6.0-r2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_AdColony_2.6.0-r2.framework"; sourceTree = "<group>"; };
+		D9C4087F1BEB53E50036B9FE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D9C408821BEB54B80036B9FE /* Fyber_AppLovin_3.1.3-r1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_AppLovin_3.1.3-r1.framework"; sourceTree = "<group>"; };
+		D9C4088A1BEB60920036B9FE /* Fyber_Chartboost_5.5.0-r2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_Chartboost_5.5.0-r2.framework"; sourceTree = "<group>"; };
+		D9C4088E1BEB6B990036B9FE /* Fyber_InMobi_4.5.3-r2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_InMobi_4.5.3-r2.framework"; sourceTree = "<group>"; };
+		D9C408941BEB6E810036B9FE /* Fyber_UnityAds_1.5.2-r1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_UnityAds_1.5.2-r1.framework"; sourceTree = "<group>"; };
+		D9C408961BEB6E810036B9FE /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
+		D9C408971BEB6E810036B9FE /* UnityAdsCompiler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "UnityAdsCompiler-Info.plist"; sourceTree = "<group>"; };
+		D9C4089C1BEB79DA0036B9FE /* Fyber_Vungle_3.2.0-r1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_Vungle_3.2.0-r1.framework"; sourceTree = "<group>"; };
+		D9C4089E1BEB79DA0036B9FE /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
+		D9C4089F1BEB79DA0036B9FE /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
+		D9C408A01BEB79DA0036B9FE /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
+		D9C408A11BEB79DA0036B9FE /* vg_mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_off.png; sourceTree = "<group>"; };
+		D9C408A21BEB79DA0036B9FE /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
+		D9C408A31BEB79DA0036B9FE /* VungleCompiler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "VungleCompiler-Info.plist"; sourceTree = "<group>"; };
+		D9C4DA041C50C98B00D24F86 /* libplugin_library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libplugin_library.a; sourceTree = "<group>"; };
+		D9ECE56A1C51131500C3F162 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D9ECE56C1C51134500C3F162 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A484111615114F700074BD57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993B9EC81D1212B900B706CF /* Fyber_FacebookAudienceNetwork_4.10.1-r2.framework in Frameworks */,
+				D9ECE56D1C51134500C3F162 /* Photos.framework in Frameworks */,
+				D9ECE56B1C51131500C3F162 /* AssetsLibrary.framework in Frameworks */,
+				D9C408801BEB53E50036B9FE /* WebKit.framework in Frameworks */,
+				A484118015128D5D0074BD57 /* ImageIO.framework in Frameworks */,
+				D968F6791BEA09F7005A5A6F /* MapKit.framework in Frameworks */,
+				D968F6771BEA0981005A5A6F /* GameController.framework in Frameworks */,
+				D968F6751BEA0842005A5A6F /* CoreText.framework in Frameworks */,
+				7337D32819B87A9C00BD4952 /* libsqlite3.0.dylib in Frameworks */,
+				732680FC1907B2F600B442CD /* GLKit.framework in Frameworks */,
+				D97C90551BF0AF2500AE8FB1 /* libnotifications.a in Frameworks */,
+				732680FB1907B2E900B442CD /* CoreVideo.framework in Frameworks */,
+				D9C408901BEB6B990036B9FE /* Fyber_InMobi_4.5.3-r2.framework in Frameworks */,
+				732680F71907B2AB00B442CD /* libz.dylib in Frameworks */,
+				732680F51907B2A400B442CD /* iAd.framework in Frameworks */,
+				D9C4DA051C50C98B00D24F86 /* libplugin_library.a in Frameworks */,
+				732680F31907B29400B442CD /* EventKitUI.framework in Frameworks */,
+				732680F11907B28F00B442CD /* EventKit.framework in Frameworks */,
+				732680EF1907B28400B442CD /* CoreTelephony.framework in Frameworks */,
+				A4C2449A1683FA5300C395D1 /* Accounts.framework in Frameworks */,
+				A4C2449B1683FA5300C395D1 /* AdSupport.framework in Frameworks */,
+				A4C2449C1683FA5300C395D1 /* Social.framework in Frameworks */,
+				A484117715128D5D0074BD57 /* AddressBook.framework in Frameworks */,
+				A484117815128D5D0074BD57 /* AddressBookUI.framework in Frameworks */,
+				D9C408A41BEB79DA0036B9FE /* Fyber_Vungle_3.2.0-r1.framework in Frameworks */,
+				A484117915128D5D0074BD57 /* AudioToolbox.framework in Frameworks */,
+				A484117A15128D5D0074BD57 /* AVFoundation.framework in Frameworks */,
+				A484117B15128D5D0074BD57 /* CFNetwork.framework in Frameworks */,
+				A484112215114F700074BD57 /* CoreGraphics.framework in Frameworks */,
+				A484117C15128D5D0074BD57 /* CoreLocation.framework in Frameworks */,
+				A484117D15128D5D0074BD57 /* CoreMedia.framework in Frameworks */,
+				A484117E15128D5D0074BD57 /* CoreMotion.framework in Frameworks */,
+				A484112015114F700074BD57 /* Foundation.framework in Frameworks */,
+				A484118115128D5D0074BD57 /* libobjc.dylib in Frameworks */,
+				A48411CA15129F610074BD57 /* libsqlite3.dylib in Frameworks */,
+				A484118315128D5D0074BD57 /* MediaPlayer.framework in Frameworks */,
+				A484118415128D5D0074BD57 /* MessageUI.framework in Frameworks */,
+				A484118515128D5D0074BD57 /* MobileCoreServices.framework in Frameworks */,
+				D9C4087E1BEB52650036B9FE /* Fyber_AdColony_2.6.0-r2.framework in Frameworks */,
+				A484118615128D5D0074BD57 /* OpenAL.framework in Frameworks */,
+				993B9EB91D11E36700B706CF /* libFyberSDK-8.3.1.a in Frameworks */,
+				D9C408981BEB6E810036B9FE /* Fyber_UnityAds_1.5.2-r1.framework in Frameworks */,
+				A484112615114F700074BD57 /* OpenGLES.framework in Frameworks */,
+				A484118715128D5D0074BD57 /* QuartzCore.framework in Frameworks */,
+				993B9EBE1D11EEB000B706CF /* Fyber_AdMob_7.6.0-r2.framework in Frameworks */,
+				A484118815128D5D0074BD57 /* Security.framework in Frameworks */,
+				D9C4088C1BEB60920036B9FE /* Fyber_Chartboost_5.5.0-r2.framework in Frameworks */,
+				A484118915128D5D0074BD57 /* StoreKit.framework in Frameworks */,
+				A484118A15128D5D0074BD57 /* SystemConfiguration.framework in Frameworks */,
+				A4E2537F166AE3DC00DCDC2C /* Twitter.framework in Frameworks */,
+				A484111E15114F700074BD57 /* UIKit.framework in Frameworks */,
+				D9C408841BEB54B80036B9FE /* Fyber_AppLovin_3.1.3-r1.framework in Frameworks */,
+				A447B67C16675195009EA762 /* libplayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		993B9EBA1D11EEB000B706CF /* Fyber_AdMob_7.6.0-r2.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				993B9EBB1D11EEB000B706CF /* FYBAdMob.h */,
+				993B9EBC1D11EEB000B706CF /* Fyber_AdMob_7.6.0-r2.framework */,
+				993B9EBD1D11EEB000B706CF /* Resources */,
+			);
+			path = "Fyber_AdMob_7.6.0-r2.embeddedframework";
+			sourceTree = "<group>";
+		};
+		993B9EBD1D11EEB000B706CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		993B9EC41D1212B900B706CF /* Fyber_FacebookAudienceNetwork_4.10.1-r2.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				993B9EC51D1212B900B706CF /* Fyber_FacebookAudienceNetwork_4.10.1-r2.framework */,
+				993B9EC61D1212B900B706CF /* FYBFacebookAudienceNetwork.h */,
+				993B9EC71D1212B900B706CF /* Resources */,
+			);
+			path = "Fyber_FacebookAudienceNetwork_4.10.1-r2.embeddedframework";
+			sourceTree = "<group>";
+		};
+		993B9EC71D1212B900B706CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A447B66F16670015009EA762 /* CoronaEnterprise */ = {
+			isa = PBXGroup;
+			children = (
+				A447B67716670C0D009EA762 /* lib */,
+				A4841153151161300074BD57 /* resource */,
+			);
+			name = CoronaEnterprise;
+			sourceTree = "<group>";
+		};
+		A447B67716670C0D009EA762 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D9C4DA041C50C98B00D24F86 /* libplugin_library.a */,
+				D97C90541BF0AF2500AE8FB1 /* libnotifications.a */,
+				A447B67116670028009EA762 /* libplayer.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		A447B823166856C7009EA762 /* Corona */ = {
+			isa = PBXGroup;
+			children = (
+				A447B824166856F3009EA762 /* main.lua */,
+			);
+			name = Corona;
+			path = CoronaSampleApp;
+			sourceTree = "<group>";
+		};
+		A484110E15114F700074BD57 = {
+			isa = PBXGroup;
+			children = (
+				993B9EC41D1212B900B706CF /* Fyber_FacebookAudienceNetwork_4.10.1-r2.embeddedframework */,
+				993B9EBA1D11EEB000B706CF /* Fyber_AdMob_7.6.0-r2.embeddedframework */,
+				D9C4089B1BEB79DA0036B9FE /* Fyber_Vungle_3.2.0-r1.embeddedframework */,
+				D9C408931BEB6E810036B9FE /* Fyber_UnityAds_1.5.2-r1.embeddedframework */,
+				D9C4088D1BEB6B990036B9FE /* Fyber_InMobi_4.5.3-r2.embeddedframework */,
+				D9C408891BEB60920036B9FE /* Fyber_Chartboost_5.5.0-r2.embeddedframework */,
+				D9C408811BEB54B80036B9FE /* Fyber_AppLovin_3.1.3-r1.embeddedframework */,
+				D9C4087B1BEB52650036B9FE /* Fyber_AdColony_2.6.0-r2.embeddedframework */,
+				D968F67E1BEA0C98005A5A6F /* fyber-sdk-lib */,
+				0465B6A81721730A00039049 /* Default-568h@2x.png */,
+				A484112715114F700074BD57 /* App */,
+				A447B823166856C7009EA762 /* Corona */,
+				A447B66F16670015009EA762 /* CoronaEnterprise */,
+				A484111C15114F700074BD57 /* Frameworks */,
+				A484111A15114F700074BD57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A484111A15114F700074BD57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A484111915114F700074BD57 /* FyberCoronaTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A484111C15114F700074BD57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9ECE56C1C51134500C3F162 /* Photos.framework */,
+				D9ECE56A1C51131500C3F162 /* AssetsLibrary.framework */,
+				D9C4087F1BEB53E50036B9FE /* WebKit.framework */,
+				D968F6781BEA09F7005A5A6F /* MapKit.framework */,
+				D968F6761BEA0981005A5A6F /* GameController.framework */,
+				D968F6741BEA0842005A5A6F /* CoreText.framework */,
+				7337D32719B87A9C00BD4952 /* libsqlite3.0.dylib */,
+				732680FA1907B2E900B442CD /* CoreVideo.framework */,
+				732680F61907B2AB00B442CD /* libz.dylib */,
+				732680F41907B2A400B442CD /* iAd.framework */,
+				732680F21907B29400B442CD /* EventKitUI.framework */,
+				732680F01907B28F00B442CD /* EventKit.framework */,
+				732680EE1907B28400B442CD /* CoreTelephony.framework */,
+				A4C244971683FA5300C395D1 /* Accounts.framework */,
+				A4C244981683FA5300C395D1 /* AdSupport.framework */,
+				A4C244991683FA5300C395D1 /* Social.framework */,
+				A484116315128D5C0074BD57 /* AddressBook.framework */,
+				A484116415128D5C0074BD57 /* AddressBookUI.framework */,
+				A484116515128D5C0074BD57 /* AudioToolbox.framework */,
+				A484116615128D5C0074BD57 /* AVFoundation.framework */,
+				A484116715128D5C0074BD57 /* CFNetwork.framework */,
+				A484112115114F700074BD57 /* CoreGraphics.framework */,
+				A484116815128D5C0074BD57 /* CoreLocation.framework */,
+				A484116915128D5C0074BD57 /* CoreMedia.framework */,
+				A484116A15128D5C0074BD57 /* CoreMotion.framework */,
+				A484111F15114F700074BD57 /* Foundation.framework */,
+				A484112315114F700074BD57 /* GLKit.framework */,
+				A484116C15128D5D0074BD57 /* ImageIO.framework */,
+				A484116D15128D5D0074BD57 /* libobjc.dylib */,
+				A48411C915129F610074BD57 /* libsqlite3.dylib */,
+				A484116F15128D5D0074BD57 /* MediaPlayer.framework */,
+				A484117015128D5D0074BD57 /* MessageUI.framework */,
+				A484117115128D5D0074BD57 /* MobileCoreServices.framework */,
+				A484117215128D5D0074BD57 /* OpenAL.framework */,
+				A484112515114F700074BD57 /* OpenGLES.framework */,
+				A484117315128D5D0074BD57 /* QuartzCore.framework */,
+				A484117415128D5D0074BD57 /* Security.framework */,
+				A484117515128D5D0074BD57 /* StoreKit.framework */,
+				A484117615128D5D0074BD57 /* SystemConfiguration.framework */,
+				A4E2537E166AE3DC00DCDC2C /* Twitter.framework */,
+				A484111D15114F700074BD57 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A484112715114F700074BD57 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0465B6B7172174A700039049 /* fyberLib.h */,
+				0465B6B8172174A700039049 /* fyberLib.mm */,
+				0465B6B41721748800039049 /* MyCoronaDelegate.h */,
+				0465B6B51721748800039049 /* MyCoronaDelegate.mm */,
+				A484112A15114F700074BD57 /* InfoPlist.strings */,
+				A484112D15114F700074BD57 /* main.mm */,
+				A484112F15114F700074BD57 /* Prefix.pch */,
+			);
+			name = App;
+			path = CoronaSampleApp;
+			sourceTree = "<group>";
+		};
+		A4841153151161300074BD57 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				A498B81916D70EFC0091A148 /* CoronaResources.bundle */,
+				A447B6691666FD43009EA762 /* CoronaSDK3rdPartyLicenses.txt */,
+				A447B6641666FD02009EA762 /* MainWindow-iPad.xib */,
+				A447B6651666FD02009EA762 /* MainWindow.xib */,
+			);
+			name = resource;
+			path = CoronaSampleApp;
+			sourceTree = "<group>";
+		};
+		D968F67E1BEA0C98005A5A6F /* fyber-sdk-lib */ = {
+			isa = PBXGroup;
+			children = (
+				993B9EC91D12139C00B706CF /* FYB_SDK_versions.h */,
+				993B9ECA1D12139C00B706CF /* FYBAdapterOptions.h */,
+				993B9ECB1D12139C00B706CF /* FYBBannerController.h */,
+				993B9ECC1D12139C00B706CF /* FYBBannerControllerDelegate.h */,
+				993B9ECD1D12139C00B706CF /* FYBBannerControllerState.h */,
+				993B9ECE1D12139C00B706CF /* FYBBannerNetworkAdapter.h */,
+				993B9ECF1D12139C00B706CF /* FYBBannerNetworkAdapterDelegate.h */,
+				993B9ED01D12139C00B706CF /* FYBBannerPosition.h */,
+				993B9ED11D12139C00B706CF /* FYBBannerSize.h */,
+				993B9ED21D12139C00B706CF /* FYBBannerView.h */,
+				993B9ED31D12139C00B706CF /* FYBBaseNetwork.h */,
+				993B9ED41D12139C00B706CF /* FYBCacheManager.h */,
+				993B9ED51D12139C00B706CF /* FYBError.h */,
+				993B9ED61D12139C00B706CF /* FyberSDK.h */,
+				993B9ED71D12139C00B706CF /* FYBInterstitialController.h */,
+				993B9ED81D12139C00B706CF /* FYBInterstitialControllerDelegate.h */,
+				993B9ED91D12139D00B706CF /* FYBInterstitialControllerDismissReason.h */,
+				993B9EDA1D12139D00B706CF /* FYBInterstitialControllerState.h */,
+				993B9EDB1D12139D00B706CF /* FYBInterstitialNetworkAdapter.h */,
+				993B9EDC1D12139D00B706CF /* FYBInterstitialNetworkAdapterDelegate.h */,
+				993B9EDD1D12139D00B706CF /* FYBLogAppender.h */,
+				993B9EDE1D12139D00B706CF /* FYBLogger.h */,
+				993B9EDF1D12139D00B706CF /* FYBLogLevel.h */,
+				993B9EE01D12139D00B706CF /* FYBOfferWallViewController.h */,
+				993B9EE11D12139D00B706CF /* FYBPrecachingNetworkAdapter.h */,
+				993B9EE21D12139D00B706CF /* FYBRandomID.h */,
+				993B9EE31D12139D00B706CF /* FYBReachability.h */,
+				993B9EE41D12139D00B706CF /* FYBRequestParameters.h */,
+				993B9EE51D12139D00B706CF /* FYBRewardedVideoController.h */,
+				993B9EE61D12139D00B706CF /* FYBRewardedVideoControllerDelegate.h */,
+				993B9EE71D12139D00B706CF /* FYBRewardedVideoControllerDismissReason.h */,
+				993B9EE81D12139D00B706CF /* FYBRewardedVideoControllerState.h */,
+				993B9EE91D12139D00B706CF /* FYBRewardedVideoNetworkAdapter.h */,
+				993B9EEA1D12139D00B706CF /* FYBRewardedVideoNetworkAdapterDelegate.h */,
+				993B9EEB1D12139D00B706CF /* FYBRewardedVideoViewController.h */,
+				993B9EEC1D12139D00B706CF /* FYBSDKOptions.h */,
+				993B9EED1D12139D00B706CF /* FYBSystemLogger.h */,
+				993B9EEE1D12139D00B706CF /* FYBTPNGenericAdapter.h */,
+				993B9EEF1D12139D00B706CF /* FYBTPNMediationTypes.h */,
+				993B9EF01D12139D00B706CF /* FYBTPNVideoAdapter.h */,
+				993B9EF11D12139D00B706CF /* FYBUrlParametersProvider.h */,
+				993B9EF21D12139D00B706CF /* FYBUser.h */,
+				993B9EF31D12139D00B706CF /* FYBUserConstants.h */,
+				993B9EF41D12139D00B706CF /* FYBVirtualCurrencyClient.h */,
+				993B9EF51D12139D00B706CF /* FYBVirtualCurrencyClientDelegate.h */,
+				993B9EF61D12139D00B706CF /* FYBVirtualCurrencyErrorType.h */,
+				993B9EF71D12139D00B706CF /* FYBVirtualCurrencyResponse.h */,
+				993B9EB81D11E36700B706CF /* libFyberSDK-8.3.1.a */,
+				D968F6A81BEA0C98005A5A6F /* Resources */,
+			);
+			path = "fyber-sdk-lib";
+			sourceTree = "<group>";
+		};
+		D968F6A81BEA0C98005A5A6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D968F6A91BEA0C98005A5A6F /* FYBBackIcon@2x.png */,
+				D968F6AA1BEA0C98005A5A6F /* FYBBackIconiPad@2x.png */,
+				D968F6AB1BEA0C98005A5A6F /* FYBBackIconiPhone@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9C4087B1BEB52650036B9FE /* Fyber_AdColony_2.6.0-r2.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				D9C4087C1BEB52650036B9FE /* Fyber_AdColony_2.6.0-r2.framework */,
+				D9C4087D1BEB52650036B9FE /* Resources */,
+			);
+			path = "Fyber_AdColony_2.6.0-r2.embeddedframework";
+			sourceTree = "<group>";
+		};
+		D9C4087D1BEB52650036B9FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9C408811BEB54B80036B9FE /* Fyber_AppLovin_3.1.3-r1.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				D9C408821BEB54B80036B9FE /* Fyber_AppLovin_3.1.3-r1.framework */,
+				D9C408831BEB54B80036B9FE /* Resources */,
+			);
+			path = "Fyber_AppLovin_3.1.3-r1.embeddedframework";
+			sourceTree = "<group>";
+		};
+		D9C408831BEB54B80036B9FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9C408891BEB60920036B9FE /* Fyber_Chartboost_5.5.0-r2.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				D9C4088A1BEB60920036B9FE /* Fyber_Chartboost_5.5.0-r2.framework */,
+				D9C4088B1BEB60920036B9FE /* Resources */,
+			);
+			path = "Fyber_Chartboost_5.5.0-r2.embeddedframework";
+			sourceTree = "<group>";
+		};
+		D9C4088B1BEB60920036B9FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9C4088D1BEB6B990036B9FE /* Fyber_InMobi_4.5.3-r2.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				D9C4088E1BEB6B990036B9FE /* Fyber_InMobi_4.5.3-r2.framework */,
+				D9C4088F1BEB6B990036B9FE /* Resources */,
+			);
+			path = "Fyber_InMobi_4.5.3-r2.embeddedframework";
+			sourceTree = "<group>";
+		};
+		D9C4088F1BEB6B990036B9FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9C408931BEB6E810036B9FE /* Fyber_UnityAds_1.5.2-r1.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				D9C408941BEB6E810036B9FE /* Fyber_UnityAds_1.5.2-r1.framework */,
+				D9C408951BEB6E810036B9FE /* Resources */,
+			);
+			path = "Fyber_UnityAds_1.5.2-r1.embeddedframework";
+			sourceTree = "<group>";
+		};
+		D9C408951BEB6E810036B9FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9C408961BEB6E810036B9FE /* UnityAds.bundle */,
+				D9C408971BEB6E810036B9FE /* UnityAdsCompiler-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9C4089B1BEB79DA0036B9FE /* Fyber_Vungle_3.2.0-r1.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				D9C4089C1BEB79DA0036B9FE /* Fyber_Vungle_3.2.0-r1.framework */,
+				D9C4089D1BEB79DA0036B9FE /* Resources */,
+			);
+			path = "Fyber_Vungle_3.2.0-r1.embeddedframework";
+			sourceTree = "<group>";
+		};
+		D9C4089D1BEB79DA0036B9FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9C4089E1BEB79DA0036B9FE /* __vungle.db */,
+				D9C4089F1BEB79DA0036B9FE /* vg_close.png */,
+				D9C408A01BEB79DA0036B9FE /* vg_cta.png */,
+				D9C408A11BEB79DA0036B9FE /* vg_mute_off.png */,
+				D9C408A21BEB79DA0036B9FE /* vg_mute_on.png */,
+				D9C408A31BEB79DA0036B9FE /* VungleCompiler-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A484111815114F700074BD57 /* FyberCoronaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A484114215114F700074BD57 /* Build configuration list for PBXNativeTarget "FyberCoronaTest" */;
+			buildPhases = (
+				A484111715114F700074BD57 /* Resources */,
+				A484111515114F700074BD57 /* Sources */,
+				A484111615114F700074BD57 /* Frameworks */,
+				A4841162151268030074BD57 /* Compile */,
+				A484118B15128E320074BD57 /* build.settings to Info.plist */,
+				A484118F1512906B0074BD57 /* Certify */,
+				A484119015129A930074BD57 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FyberCoronaTest;
+			productName = CoronaSampleApp;
+			productReference = A484111915114F700074BD57 /* FyberCoronaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A484111015114F700074BD57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				TargetAttributes = {
+					A484111815114F700074BD57 = {
+						DevelopmentTeam = A722HEF3XB;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.Wallet = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A484111315114F700074BD57 /* Build configuration list for PBXProject "FyberCoronaTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A484110E15114F700074BD57;
+			productRefGroup = A484111A15114F700074BD57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A484111815114F700074BD57 /* FyberCoronaTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A484111715114F700074BD57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A484112C15114F700074BD57 /* InfoPlist.strings in Resources */,
+				A447B6671666FD02009EA762 /* MainWindow-iPad.xib in Resources */,
+				A447B6681666FD02009EA762 /* MainWindow.xib in Resources */,
+				D9C408A81BEB79DA0036B9FE /* vg_mute_off.png in Resources */,
+				D9C408AA1BEB79DA0036B9FE /* VungleCompiler-Info.plist in Resources */,
+				D9C408A91BEB79DA0036B9FE /* vg_mute_on.png in Resources */,
+				A447B66A1666FD43009EA762 /* CoronaSDK3rdPartyLicenses.txt in Resources */,
+				D9C408A61BEB79DA0036B9FE /* vg_close.png in Resources */,
+				D9C408991BEB6E810036B9FE /* UnityAds.bundle in Resources */,
+				D968F6AE1BEA0C98005A5A6F /* FYBBackIconiPad@2x.png in Resources */,
+				D968F6AD1BEA0C98005A5A6F /* FYBBackIcon@2x.png in Resources */,
+				D968F6AF1BEA0C98005A5A6F /* FYBBackIconiPhone@2x.png in Resources */,
+				A498B81A16D70EFC0091A148 /* CoronaResources.bundle in Resources */,
+				0465B6AD1721730A00039049 /* Default-568h@2x.png in Resources */,
+				D9C408A51BEB79DA0036B9FE /* __vungle.db in Resources */,
+				D9C4089A1BEB6E810036B9FE /* UnityAdsCompiler-Info.plist in Resources */,
+				D9C408A71BEB79DA0036B9FE /* vg_cta.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4841162151268030074BD57 /* Compile */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Compile;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ ! -d \"$CORONA_ROOT\" ]\nthen\n\t# Assume symlink location\n\tCORONA_ROOT=$PROJECT_DIR/CoronaEnterprise\nfi\n\nif [ ! -d \"$CORONA_ROOT\" ]\nthen\n    echo \"Could not find Corona Enterprise directory\"\n    exit -1\nfi\n\n# -------------------------------------------------------------------\n\nexport TARGET_PLATFORM=ios\nCORONA_MAC_BIN=$CORONA_ROOT/Corona/mac/bin\nCORONA_SHARED_BIN=$CORONA_ROOT/Corona/shared/bin\nexport LUA_CPATH=\"$CORONA_MAC_BIN/?.so\"\n\"$CORONA_MAC_BIN\"/lua -e \"package.path='$CORONA_SHARED_BIN/?.lua;$CORONA_SHARED_BIN/?/init.lua;'..package.path\" \"$CORONA_SHARED_BIN\"/Compile.lua mac \"$CORONA_ROOT\"\nif [ $? -ne 0 ]\nthen\n    echo \"Exiting due to errors (above)\"\n    exit -1\nfi\n";
+		};
+		A484118B15128E320074BD57 /* build.settings to Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "build.settings to Info.plist";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -d \"$CORONA_ROOT\" ]\nthen\n\t# Assume symlink location\n\tCORONA_ROOT=$PROJECT_DIR/CoronaEnterprise\nfi\n\nif [ ! -d \"$CORONA_ROOT\" ]\nthen\n    echo \"Could not find Corona Enterprise directory\"\n    exit -1\nfi\n\n# -------------------------------------------------------------------\n\n\"$CORONA_ROOT\"/Corona/mac/bin/CreateInfoPlist.sh\n\nif [ $? -ne 0 ]\nthen\n    echo \"Exiting due to errors (above)\"\n    exit -1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A484118F1512906B0074BD57 /* Certify */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Certify;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -d \"$CORONA_ROOT\" ]\nthen\n\t# Assume symlink location\n\tCORONA_ROOT=$PROJECT_DIR/CoronaEnterprise\nfi\n\nif [ ! -d \"$CORONA_ROOT\" ]\nthen\n    echo \"Could not find Corona Enterprise directory\"\n    exit -1\nfi\n\n# -------------------------------------------------------------------\n\n\"$CORONA_ROOT\"/Corona/mac/bin/CertifyBuild.sh\n\nif [ $? -ne 0 ]\nthen\n    echo \"Exiting due to errors (above)\"\n    exit -1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A484119015129A930074BD57 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Ensures that next attempt to build actually rebuilds the executable so it can be (re)app_sign(ed)\necho \"Updating modification time of $PROJECT_DIR/main.mm to trigger relink of $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\necho \"We need to do this b/c app_sign can only sign an unsigned executable.\"\ntouch \"$PROJECT_DIR/main.mm\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A484111515114F700074BD57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A484112E15114F700074BD57 /* main.mm in Sources */,
+				0465B6B61721748800039049 /* MyCoronaDelegate.mm in Sources */,
+				0465B6B9172174A700039049 /* fyberLib.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A484112A15114F700074BD57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A484112B15114F700074BD57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A484114015114F700074BD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zoran Vidmar (S2D9XDM9S9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zoran Vidmar (S2D9XDM9S9)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "17ae6170-fb7a-419e-8926-36e32f441e19";
+				"PROVISIONING_PROFILE[sdk=*]" = "17ae6170-fb7a-419e-8926-36e32f441e19";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/CoronaEnterprise/Corona/shared/include/Corona ${SRCROOT}/CoronaEnterprise/Corona/shared/include/lua ${SRCROOT}/CoronaEnterprise/Corona/ios/include/Corona";
+			};
+			name = Debug;
+		};
+		A484114115114F700074BD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PILCOM, podjetje za informacijske tehnologije, d.o.o. (3VK3F52GKU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PILCOM, podjetje za informacijske tehnologije, d.o.o. (3VK3F52GKU)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "cb01bb00-e231-4109-9696-648337823140";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "cb01bb00-e231-4109-9696-648337823140";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/CoronaEnterprise/Corona/shared/include/Corona ${SRCROOT}/CoronaEnterprise/Corona/shared/include/lua ${SRCROOT}/CoronaEnterprise/Corona/ios/include/Corona";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A484114315114F700074BD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Fyber_AdColony_2.6.0-r2.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_AppLovin_3.1.3-r1.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_AdMob_7.5.2-r1.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_Chartboost_5.5.0-r2.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_InMobi_4.5.3-r2.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_UnityAds_1.5.2-r1.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_Vungle_3.2.0-r1.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_AdMob_7.6.0-r2.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_FacebookAudienceNetwork_4.10.1-r2.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "$(SRCROOT)/FyberCoronaTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/CoronaEnterprise/Corona/ios/lib",
+					"$(PROJECT_DIR)/fyber-sdk-lib",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.your.sku;
+				PRODUCT_NAME = FyberCoronaTest;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A484114415114F700074BD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Fyber_AdColony_2.6.0-r2.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_AppLovin_3.1.3-r1.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_AdMob_7.5.2-r1.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_Chartboost_5.5.0-r2.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_InMobi_4.5.3-r2.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_UnityAds_1.5.2-r1.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_Vungle_3.2.0-r1.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_AdMob_7.6.0-r2.embeddedframework",
+					"$(PROJECT_DIR)/Fyber_FacebookAudienceNetwork_4.10.1-r2.embeddedframework",
+				);
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "$(SRCROOT)/FyberCoronaTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/CoronaEnterprise/Corona/ios/lib",
+					"$(PROJECT_DIR)/fyber-sdk-lib",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.your.sku;
+				PRODUCT_NAME = FyberCoronaTest;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A484111315114F700074BD57 /* Build configuration list for PBXProject "FyberCoronaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A484114015114F700074BD57 /* Debug */,
+				A484114115114F700074BD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A484114215114F700074BD57 /* Build configuration list for PBXNativeTarget "FyberCoronaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A484114315114F700074BD57 /* Debug */,
+				A484114415114F700074BD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A484111015114F700074BD57 /* Project object */;
+}
