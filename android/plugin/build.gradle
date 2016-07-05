@@ -42,8 +42,6 @@ dependencies {
     compile 'com.squareup.dagger:dagger:1.2.2'
     compile 'javax.inject:javax.inject:1'
     compile 'com.nineoldandroids:library:2.4.0'
-
-    compile 'com.google.android.gms:play-services-ads:9.0.2'
 }
 
 task exportPluginJar(type: Copy, description: 'place the plugin JAR file in the outputs directory and give it a name from the AndroidManifest.xml') {
