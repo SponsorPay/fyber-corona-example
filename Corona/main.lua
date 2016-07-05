@@ -157,3 +157,22 @@ else
   print("using iOS credentials")
   fyberLib.CallMethod("init", "32346", "a0b037caea447827b03591880b00acfa")
 end
+
+local gameNetwork = require( "gameNetwork" )
+
+local function initCallback( event )
+    if not event.isError then
+        native.showAlert( "Success!", "", { "OK" } )
+    else
+        native.showAlert( "Failed!", event.errorMessage, { "OK" } )
+        print( "Error Code:", event.errorCode )
+    end
+end
+
+local function onSystemEvent( event )
+    if ( event.type == "applicationStart" ) then
+        gameNetwork.init( "google", initCallback )
+        return true
+    end
+end
+Runtime:addEventListener( "system", onSystemEvent )
