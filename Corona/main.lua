@@ -158,11 +158,14 @@ else
   fyberLib.CallMethod("init", "32346", "a0b037caea447827b03591880b00acfa")
 end
 
-local gameNetwork = require( "gameNetwork" )
+local gameNetwork = require( "CoronaProvider.gameNetwork.google" )
 
 local function initCallback( event )
     if not event.isError then
         native.showAlert( "Success!", "", { "OK" } )
+        gameNetwork.request("login", {
+          userInitiated = false
+        })
     else
         native.showAlert( "Failed!", event.errorMessage, { "OK" } )
         print( "Error Code:", event.errorCode )

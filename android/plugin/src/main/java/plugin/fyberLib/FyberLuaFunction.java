@@ -31,15 +31,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @FyberSDK
-@AppLovinConfigs(
-        setVerboseLogging = true
-)
-@AdMobConfigs(
-        bannerAdUnitId = "ca-app-pub-7693592604401655/9766092120"
-)
-@FacebookConfigs(
-        testDeviceHash = "4d7c5cf2a5d608b579b1de89b7d2a6fa"
-)
 public class FyberLuaFunction implements com.naef.jnlua.NamedJavaFunction {
 
     private static final String FYBER_SDK_LOG = "FYBER CORONA PLUGIN LOG";
