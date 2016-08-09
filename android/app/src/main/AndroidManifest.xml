@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.fyber.example.fybercorona"
+    package="com.sm.squares"
     android:installLocation="auto">
 
     <!-- Permissions required by this app. -->
@@ -64,7 +64,7 @@
         <!-- Corona content provider required by the video player and mail app to access this app's local files. -->
         <provider
             android:name="com.ansca.corona.storage.FileContentProvider"
-            android:authorities="com.fyber.example.fybercorona.files"
+            android:authorities="com.sm.squares.files"
             android:exported="true"
             tools:ignore="ExportedContentProvider" />
 
@@ -95,7 +95,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-                <category android:name="com.fyber.example.fybercorona" />
+                <category android:name="com.sm.squares" />
             </intent-filter>
         </receiver>
 
