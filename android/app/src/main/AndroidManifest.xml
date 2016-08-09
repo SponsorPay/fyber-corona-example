@@ -134,7 +134,9 @@
         <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+            android:value="4242000" />
+        <meta-data android:name="com.google.android.gms.games.APP_ID"
+          android:value="@string/app_id" />
         <meta-data
             android:name="applovin.sdk.key"
             android:value="APPLOVIN_SDK_KEY" />

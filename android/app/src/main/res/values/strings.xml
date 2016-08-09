@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">"Fyber Corona Example"</string>
+    <string name="app_id">123456789012</string>
 </resources>
