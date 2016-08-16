@@ -269,7 +269,7 @@ public class FyberLuaFunction implements com.naef.jnlua.NamedJavaFunction {
 
         @Override
         public void onRequestError(RequestError requestError) {
-            FyberLogger.d(FYBER_SDK_LOG, "Video onRequestError");
+            FyberLogger.d(FYBER_SDK_LOG, "Video onRequestError " + requestError.getDescription());
             videoIntent = null;
 
             sendToCorona("VideoEvent", "load_video_request_error", null);
@@ -296,7 +296,7 @@ public class FyberLuaFunction implements com.naef.jnlua.NamedJavaFunction {
 
         @Override
         public void onRequestError(RequestError requestError) {
-            FyberLogger.d(FYBER_SDK_LOG, "on Interstitial Ad Request ERROR");
+            FyberLogger.d(FYBER_SDK_LOG, "on Interstitial Ad Request ERROR " + requestError.getDescription());
             interstitialIntent = null;
 
             sendToCorona("InterstitialEvent", "load_interstitial_request_error", null);
