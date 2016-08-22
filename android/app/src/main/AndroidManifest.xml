@@ -138,8 +138,11 @@
         <meta-data android:name="com.google.android.gms.games.APP_ID"
           android:value="@string/app_id" />
         <meta-data
-            android:name="applovin.sdk.key"
-            android:value="APPLOVIN_SDK_KEY" />
+          android:name="applovin.sdk.key"
+          android:value="vgn9FLchXQTcRk0islspVkI59PzU5Rx-7h8M2l2aAbBcJCJAyA-RuGX2gUWmwSl19uNBcQno0yOK9hV5sTXlk3" />
+        <meta-data
+          android:name="applovin.sdk.verbose_logging"
+          android:value="true" />
 
         <!-- Vungle -->
         <activity

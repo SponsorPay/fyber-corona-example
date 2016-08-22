@@ -233,18 +233,23 @@ public class FyberLuaFunction implements com.naef.jnlua.NamedJavaFunction {
 
             //for interstitial
             if (resultCode == activity.RESULT_OK && requestCode == interstitialRequestCode) {
-                InterstitialAdCloseReason adStatus = (InterstitialAdCloseReason) data.getSerializableExtra(InterstitialActivity.AD_STATUS);
-                FyberLogger.d(FYBER_SDK_LOG, "Interstitial closed with status - " + adStatus);
-                if (adStatus.equals(InterstitialAdCloseReason.ReasonError)) {
-                    String error = data.getStringExtra(InterstitialActivity.ERROR_MESSAGE);
-                    FyberLogger.d(FYBER_SDK_LOG, "Interstitial closed and error - " + error);
-                    sendToCorona("InterstitialEvent", "show_interstitial_error", error.toString());
-                } else {
-                    sendToCorona("InterstitialEvent", "show_interstitial_closed", adStatus.toString());
+                if (data != null) {
+                    InterstitialAdCloseReason adStatus = (InterstitialAdCloseReason) data.getSerializableExtra(InterstitialActivity.AD_STATUS);
+                    FyberLogger.d(FYBER_SDK_LOG, "Interstitial closed with status - " + adStatus);
+                    if (adStatus.equals(InterstitialAdCloseReason.ReasonError)) {
+                        String error = data.getStringExtra(InterstitialActivity.ERROR_MESSAGE);
+                        FyberLogger.d(FYBER_SDK_LOG, "Interstitial closed and error - " + error);
+                        sendToCorona("InterstitialEvent", "show_interstitial_error", error.toString());
+                    } else {
+                        sendToCorona("InterstitialEvent", "show_interstitial_closed", adStatus.toString());
+                    }
+
                 }
 
+            } else if (resultCode == activity.RESULT_CANCELED || data == null) {
+                FyberLogger.d(FYBER_SDK_LOG, "Interstitial Activity Canceled");
+                sendToCorona("InterstitialEvent", "show_interstitial_closed", "error");
             }
-
         }
     }
 
