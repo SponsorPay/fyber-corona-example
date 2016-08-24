@@ -131,6 +131,9 @@ repositories {
         name "Fyber's maven repo"
         url "https://fyber.bintray.com/maven"
     }
+    flatDir {
+      dirs '../plugin/libs'
+    }
 }
 
 dependencies {
